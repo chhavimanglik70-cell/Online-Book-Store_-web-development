@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <style>
+        .header{
+            background:orange;
+            height:80px;
+            font-size: 30px;
+            display:flex;
+            align-items:center;
+            text-align: center;
+        }
+        .logo{
+            width:150px;
+        }
+        .logo img{
+            width:70px;
+            height:70px;
+        }
+        .title{
+            font-weight: bold;
+            flex:1;
+        }
+        .menu{
+            background-color: rgb(235, 193, 114);
+            display: flex;
+            height:70px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .main{
+            display: flex;
+        }
+        .menu a{
+            text-decoration:none;
+            color:black;
+            font-weight: bold;
+        }
+        .left{
+            width: 200px;
+            border:1px solid black;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            justify-content: space-around;
+        }
+        .right{
+            flex:1;
+            border:1px solid black;
+            padding:20px;
+        }
+        .left a{
+            text-decoration: none;
+            color:brown;
+        }
+        .right iframe{
+            width:100%;
+            height:100%;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="College logo">
+        </div>
+        <div class="title">
+            Website Name
+        </div>
+    </div>
+    <div class="menu">
+        <a href="home.html" target="content"> Home</a>
+         <a href=""> Login</a>
+          <a href=""> Registration</a>
+           <a href=""> Catalogue</a>
+           
+           <a href=""> Cart</a>
+    </div>
+    <div class="main">
+        <div class="left">
+            <a href="cse.html" target="content"> CSE Books</a>
+              <a href="eee.html" target="content"> EEE Books</a>
+                <a href="ece.html" target="content"> ECE Books</a>
+                  <a href="civil.html" target="content"> Civil Books</a>
+        </div>
+        <div class="right">
+            <iframe src="home.html" name="content">
+
+            </iframe>
+        </div>
+    </div>
+    
+</body>
+</html>
